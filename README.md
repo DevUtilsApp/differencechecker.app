@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+Text Diff Checker
+=================
 
-You can use the [editor on GitHub](https://github.com/DevUtilsApp/differencechecker.app/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Compare texts for differences without online tools. [DevUtils.app](https://devutils.app) allows you to quickly compare the difference between text strings without any internet connection. It supports visual highlighting the diff, renders HTML, or the patch format of the diff.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<p align="center">
+  <img src="https://devutils.app/assets/text-diff-dark.png" alt="DevUtils.app: Text Diff Checker macOS app"/>
+  <br/>
+  <a href="https://devutils.app/">🚀  Download</a> | <a href="https://devutils.app/demo">🎬  Demo & Screenshots</a> | <a href="https://github.com/DevUtilsApp/DevUtils-app">📝  View source</a>
+</p>
 
-### Markdown
+Quickly compare two text strings
+--------------------------------
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+You can start to compares text strings from anywhere in your macOS (terminal, in email, web browser,...). Activate the app by:
 
-```markdown
-Syntax highlighted code block
+* Copy text ► Press ⌃⌥⌘Space `(Or your own customized hotkey, up to you)`
+* Copy text ► Click to icon <img src="https://devutils.app/menu-icon-dark.png" alt="DevUtils.app status bar icon" width="28px" /> in the status bar
+* Select text ► Right-click ► "Inspect in DevUtils.app" `(This menu appears after you install the app)`
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+Input
+-----
 
-1. Numbered
-2. List
+Enter your first string in the left input textbox and the second string to compare in the right input textbox. Clicking the "Swap Inputs" button allows you to quickly swap the two strings.
 
-**Bold** and _Italic_ and `Code` text
+Output
+------
 
-[Link](url) and ![Image](src)
-```
+The tool will render the diff and highlight it visually in the bottom panel. You can choose to view the diff with the following format:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+*   **Formatted text**: Text with its background as green/red based on the diff. You can copy this and paste it into other rich text editors.
+*   **HTML**: The HTML version of the formatted text, where the html tags are used to represents the diff, for example `<i>inserted</i> <del>deleted</del>`.
+*   **Minimal diff**: Return the raw diff data. This format is similar to the [UniDiff](https://en.wikipedia.org/wiki/Diff#Unified_format) format but with some differences. See [this page](https://github.com/google/diff-match-patch/wiki/Unidiff) for more details.
 
-### Jekyll Themes
+You can navigate through the diffs by clicking the arrow buttons near the output text view. The number between arrows is the number of diff sections found in the output.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DevUtilsApp/differencechecker.app/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Options
+-------
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+You can choose to compare the text strings using character-based, word-based, or line-based. Select the option you want in the "Diff mode" section.
